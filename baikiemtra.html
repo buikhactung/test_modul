@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("Nhập điểm toán: "));
+    let b=parseInt(prompt("Nhập điểm Văn: "));
+    let c=parseInt(prompt("Nhập điểm tiếng anh: "));
+
+    while (a<0 || a>10) {
+        alert("Nhập lại điểm toán: ");
+         a=parseInt(prompt("Nhập điểm toán: "));
+
+    }
+        while (b<0||b>10) {
+            alert("Nhập lại điểm Văn: ");
+             b=parseInt(prompt("Nhập điểm Văn: "));
+
+        }
+            while (c<0||c>10){
+            alert("Nhập lại điểm tiếng anh: ");
+                 c=parseInt(prompt("Nhập điểm tiếng anh: "));
+
+
+            }
+    ave = (a*2 + b + c*2)/5;
+
+    if (ave<5) {
+        document.write(ave+"<br>");
+        document.write("Không đạt");
+    }else if (ave<7.5) {
+        document.write(ave+"<br>");
+        document.write("Đạt");
+    }else if (ave<8.5) {
+        document.write(ave+"<br>");
+        document.write("Khá");
+    }else {
+        document.write(ave+"<br>");
+        document.write("Tổt");
+    }
+</script>
+</body>
+</html>
